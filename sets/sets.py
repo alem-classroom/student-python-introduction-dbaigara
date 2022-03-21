@@ -24,8 +24,10 @@ def add_elem_to_set(set, elem):
 
 def remove_elem_if_exists(set, elem):
     if elem in set:
-        return set.remove(elem)
-    return set
+        set.remove(elem)
+        return set
+    else:
+        return set
     # remove elem from set if it exists, and return the set
 
 def delete_first_element(set):
